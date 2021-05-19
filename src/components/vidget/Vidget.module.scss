@@ -1,0 +1,13 @@
+@import "../../global/styles/partials.scss";
+
+.vidget {
+  background: linear-gradient(180deg, #1f2630 0%, #1a2028 100%);
+  box-shadow: 15px 30px 40px rgba(0, 0, 0, 0.746614);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.top {
+  background: linear-gradient(180deg, #303c4b 0%, #202832 100%);
+  border-radius: 5px 5px 0 0;
+}

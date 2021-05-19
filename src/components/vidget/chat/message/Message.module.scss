@@ -1,0 +1,56 @@
+@import "../../../../global/styles/partials.scss";
+
+.block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 270px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  margin-right: 10px;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: $gray;
+}
+
+.text {
+  background: #2b3440;
+  border-radius: 5px;
+  padding: 15px 20px;
+  margin-top: 10px;
+  p {
+    font-size: 12px;
+    line-height: 18px;
+    color: $white;
+  }
+}
+
+.userMessage {
+  justify-content: flex-end;
+  margin-left: auto;
+  .icon {
+    order: 2;
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  .info {
+    order: 1;
+  }
+  .text {
+    background: #171d24;
+    text-align: right;
+  }
+  .name {
+    text-align: right;
+  }
+}

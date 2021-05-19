@@ -1,0 +1,120 @@
+@import "../../global/styles/partials.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+}
+
+.menu {
+  background: #1f2630;
+  position: absolute;
+  padding: 14px 10px;
+  border-radius: 0 0 5px 5px;
+  transition: all 0.4s ease-in;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  max-width: 785px;
+  width: 100%;
+  z-index: 2;
+}
+
+.btn {
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 16px);
+  width: 32px;
+  height: 32px;
+  background: #1f2630;
+  border-radius: 0px 0px 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+  img {
+    transition: all 0.4s ease-in;
+  }
+}
+
+.open {
+  box-shadow: 15px 30px 40px rgba(0, 0, 0, 0.746614);
+  transform: translate(-50%, 0%);
+  .btn img {
+    transform: rotate(-180deg);
+  }
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 20px;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    .title {
+      color: $white;
+    }
+  }
+}
+
+.icon {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: $gray;
+  transition: all 0.4s ease-in;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.notification {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.notificationLabel {
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: center;
+  color: $black;
+  background: $blue;
+  border-radius: 6px;
+  padding: 1px 3px;
+}
+
+.user {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.message {
+  margin-left: 20px;
+  cursor: pointer;
+}

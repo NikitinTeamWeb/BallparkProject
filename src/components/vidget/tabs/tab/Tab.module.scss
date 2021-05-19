@@ -1,0 +1,33 @@
+@import "../../../../global/styles/partials.scss";
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  border-bottom: 1px solid transparent;
+  padding: 14px 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  &:hover {
+    .title {
+      color: $white;
+    }
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: $gray;
+  transition: all 0.2s ease-in;
+}
+
+.active {
+  border-bottom: 1px solid $blue;
+  .title {
+    color: $white;
+  }
+}

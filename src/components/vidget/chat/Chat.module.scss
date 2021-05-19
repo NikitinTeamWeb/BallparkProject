@@ -1,0 +1,90 @@
+@import "../../../global/styles/partials.scss";
+
+.main {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 34px;
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      #16181e 0%,
+      rgba(22, 24, 30, 0.0001) 100%
+    );
+    mix-blend-mode: normal;
+    opacity: 0.7;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 34px;
+    width: 100%;
+    background: linear-gradient(
+      0deg,
+      #16181e 0%,
+      rgba(22, 24, 30, 0.0001) 100%
+    );
+    mix-blend-mode: normal;
+    opacity: 0.7;
+  }
+}
+
+.mainBlock {
+  max-height: 393px;
+  overflow-y: scroll;
+  padding: 25px 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px;
+  background: linear-gradient(0deg, #202832 0%, #303c4b 100%);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.button button {
+  background: radial-gradient(100% 100% at 50% 0%, #525f6e 0%, #242d37 100%);
+  box-shadow: -1px -2px 10px #505f70, 1px 2px 10px #000000;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  max-width: 260px;
+  width: 100%;
+  // margin-top: 20px;
+  textarea {
+    background: transparent;
+    border: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: $white;
+    min-width: 100%;
+    max-width: 100%;
+    resize: none;
+    padding: 0;
+    &::placeholder {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      color: $gray;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
